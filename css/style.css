@@ -1,0 +1,221 @@
+/* fonts */
+
+@font-face {
+    font-family: "W95";
+    src: url(/fonts/W95FA.otf);
+}
+
+@font-face {
+    font-family: "pixel";
+    src: url(/fonts/pixel.otf);
+}
+
+/* text formatting */
+
+h1{
+    font-family: "W95", 'Courier New', Courier, monospace;
+    font-size: 48px;
+    text-align: center;
+    color:white;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h2{
+    font-family: "W95", 'Courier New', Courier, monospace;
+    text-align: center;
+    color:white;
+    padding: 10px;
+}
+
+h3{
+    font-family: "pixel", 'Courier New', Courier, monospace;
+    text-align: center;
+    color:white;
+    padding: 10px;
+}
+
+h4{
+    font-family: "W95", 'Courier New', Courier, monospace;
+    text-align: center;
+    color:white;
+    padding: 10px;
+}
+
+h5{
+    font-family: "pixel", 'Courier New', Courier, monospace;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-family: "pixel", 'Courier New', Courier, monospace;
+    font-size: 12px;
+    color:white;
+    padding: 10px;
+}
+
+/* page formatting */
+
+html{
+    background-image: url(/img/streetbanner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body{
+    margin: 0px;
+}
+
+.page{
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.divfooter{
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+}
+
+img{
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    height: auto;
+    max-width: 50%;
+}
+
+.channelimg{
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    height: auto;
+    max-width: 70%;
+}
+
+.biggerimg{
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    height: auto;
+    max-width: 70%;
+}
+
+.channelimg:hover{
+    border-color: white;
+    border-style: double;
+    border-radius: 10px;
+}
+
+/* div formatting */
+
+.main{
+    width: 75%;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.534);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+.banner{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.80);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 80px;
+    backdrop-filter: blur(1px);
+    display: inline-block;
+    height: max-content;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+    margin: 0px;
+    gap: 2%;
+}
+
+.button{
+    font-size: 24px;
+    color: white;
+    background: linear-gradient(to top, #53006d, #130069);
+    background: -webkit-linear-gradient(to top, #53006d, #130069);
+    background: -moz-linear-gradient(to top, #53006d, #130069);
+    border-style: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    width: 70%;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.button:hover{
+    background: linear-gradient(to top, #c300ff, #2f00ff);
+    background: -webkit-linear-gradient(to top, #c300ff, #2f00ff);
+    background: -moz-linear-gradient(to top, #c300ff, #2f00ff);
+}
+
+/* dropdowns */
+
+summary:hover{
+    color: rgb(153, 0, 255)
+}
+
+/* navigation bar */
+
+.navbar ul{
+    list-style-type: none;
+    background: linear-gradient(to left, #380049, #4a009e);
+    background: -webkit-linear-gradient(to left, #380049, #4a009e);
+    background: -moz-linear-gradient(to left, #380049, #4a009e);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color:white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background: linear-gradient(to left, #c300ff, #7700ff);
+    background: -webkit-linear-gradient(to left, #c300ff, #7700ff);
+    background: -moz-linear-gradient(to left, #c300ff, #7700ff);
+}
+
+.navbar li{
+    float: left;
+}
+
+/* media queries */
+
+@media (max-width: 400px){
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+}
