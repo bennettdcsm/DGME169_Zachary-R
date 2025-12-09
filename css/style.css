@@ -51,6 +51,14 @@ h5{
     padding: 10px;
 }
 
+h6{
+    font-family: "W95", 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color:white;
+    padding: 5px;
+    margin: 9px;
+}
+
 a{
     text-decoration: none;
 }
@@ -59,7 +67,83 @@ p{
     font-family: "pixel", 'Courier New', Courier, monospace;
     font-size: 12px;
     color:white;
-    padding: 10px;
+    padding: 0px;
+}
+
+/* form formatting */
+
+.formrow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formrow2{
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea{
+    width: 98.5%;
+    height: 100px;
+    resize: vertical;
+}
+
+fieldset{
+    border: 2px dashed #c300ff;
+}
+
+textarea, input{
+    color: white;
+    border: 2px solid black;
+}
+
+textarea:focus, input[type=text]focus{
+    outline: 2px solid #c300ff;
+}
+
+input[type=radio]{
+    appearance: radio;
+}
+
+input[type=text], input[type=email], textarea, select, button{
+    padding: 5px;
+}
+
+input[type=text], input[type=email], textarea{
+    background-color: black;
+    outline: 2px solid #53006d;
+}
+
+input[type=text], input[type=email]{
+    width: 35%;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus{
+    outline: 2px solid #c300ff;
+}
+
+button{
+    font-size: 24px;
+    color: white;
+    background: linear-gradient(to top, #53006d, #130069);
+    background: -webkit-linear-gradient(to top, #53006d, #130069);
+    background: -moz-linear-gradient(to top, #53006d, #130069);
+    border-style: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    width: 50%;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+button:hover{
+    background: linear-gradient(to top, #c300ff, #2f00ff);
+    background: -webkit-linear-gradient(to top, #c300ff, #2f00ff);
+    background: -moz-linear-gradient(to top, #c300ff, #2f00ff);
 }
 
 /* page formatting */
@@ -117,6 +201,26 @@ img{
     border-color: white;
     border-style: double;
     border-radius: 10px;
+}
+
+.fullgallery{
+    display: grid;
+    justify-content: center;
+}
+
+.imggallery{
+    display: inline-block;
+    max-inline-size: 100%;
+    border: 2px solid #53006d;
+    margin: 5px;
+}
+
+.imggallery .imgdesc{
+    padding: 0px;
+}
+
+li{
+    color: white;
 }
 
 /* div formatting */
@@ -218,4 +322,21 @@ summary:hover{
         flex-direction: column;
         align-items: center;
     }
+}
+
+@media (max-width: 738px){
+    .formrow{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formrow2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type=text], input[type=email]{
+    width: 60%;
+}
 }

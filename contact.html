@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Zac</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="page">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="banner">
+                <h1>Contact</h1>
+            </div>
+            <div class="main">
+                <header>
+                    <h1>Contact Form</h1>
+                </header>
+                <main>
+                    <p>Got something to say, punk?! Just kidding! You can use this form below to send anything you want to me, such as fanart, questions you might have, or collaboration inquiries! Make sure to include your name and email if you want me to be able to respond to you.</p>
+
+                    <form action="formsubmit.html" method="get" id="contactform">
+                        <fieldset class="fieldset">
+                            <legend class="legend"><p>Form</p></legend>
+                                <div class="formrow">
+                                    <label for="name"><p>Name:</p></label>
+                                    <input required type="text" id="name" placeholder="Your name">
+                                    <label for="email"><p>Email:</p></label>
+                                    <input type="email" id="email" placeholder="Yourname@website.com">
+                                </div>
+                                <br>
+                                <div class="formrow2">
+                                    <label for="topic"><p>Topic:</p></label>
+                                    <label for="topic1"><h6>General</h6></label>
+                                    <input type="radio" id="topic1" value="topic1" name="topic">
+                                    <label for="topic2"><h6>Fanart</h6></label>
+                                    <input type="radio" id="topic2" value="topic2" name="topic">
+                                    <label for="topic3"><h6>Question</h6></label>
+                                    <input type="radio" id="topic3" value="topic3" name="topic">
+                                    <label for="topic4"><h6>Collaboration</h6></label>
+                                    <input type="radio" id="topic4" value="topic4" name="topic">
+                                    <label for="topic5"><h6>Other</h6></label>
+                                    <input type="radio" id="topic5" value="topic5" name="topic">
+                                </div>
+                                <br>
+                                    <label required for="message"><p>Write your message for me!</p></label>
+                                    <textarea required name="message" id="message" placeholder="'You are good enough!'"></textarea>
+                                <br>
+                                <br>
+                                <br>
+                                <div class="buttons">
+                                    <button type="submit"><p>Submit</p></button>
+                                    <button type="reset"><p>Reset</p></button>
+                                </div>
+                                
+                        </fieldset>
+                    </form>
+                </main>
+            </div>
+            
+            <footer class="mainfooter">
+                <h4>Zac Rohatch - DGME 169</h4>
+            </footer>
+        </div>
+    </body>
+</html>
